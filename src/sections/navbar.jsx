@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import cakeLogo from "../assets/cake-logo.png";
+import Divider from "../components/Divider";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -73,7 +74,7 @@ export default function Navbar() {
                 {link}
               </a>
               {i < links.length - 1 && (
-                <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-pink-300 to-transparent my-3"></div>
+                <Divider />
               )}
             </div>
           ))}
