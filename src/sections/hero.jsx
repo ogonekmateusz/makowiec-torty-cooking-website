@@ -1,8 +1,8 @@
 import React from "react";
-
+import cakeHero from "../assets/cake-hero.png";
 export default function Hero() {
   return (
-    <div className="hero container mx-auto md:px-0 px-4">
+    <div className="hero container mx-auto md:px-0 px-4 py-0 md:py-20">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="hero-left flex flex-col justify-center items-center md:items-start text-center md:text-left py-20 ">
           <h1 className="title text-white text-4xl font-extrabold tracking-tight mb-6 md:text-5xl lg:text-6xl">
@@ -17,7 +17,9 @@ export default function Hero() {
             Zamów teraz
           </button>
         </div>
-        <div className="hero-right"></div>
+        <div className="hero-right flex justify-center items-center md:py-10">
+          <img src={cakeHero} alt="Tort" className="w-85 md:w-[25vw] h-auto rounded-4xl shadow-lg" />
+        </div>
       </div>
     </div>
   );
