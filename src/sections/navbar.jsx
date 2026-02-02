@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import cakeLogo from "../assets/cake-logo.png";
 import Divider from "../components/Divider";
+import NavbarItem from "../components/Navbar-item";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -64,15 +65,7 @@ export default function Navbar() {
         <div className="flex flex-col font-semibold text-lg px-5 text-pink-500">
           {links.map((link, i) => (
             <div key={i}>
-              <a
-                href="#"
-                onClick={() => setMenuOpen(false)}
-                className="relative inline-block py-3 transition-all duration-300 hover:translate-x-2
-                           after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px]
-                           after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full"
-              >
-                {link}
-              </a>
+              <NavbarItem title={link} href="#" />
               {i < links.length - 1 && (
                 <Divider />
               )}
