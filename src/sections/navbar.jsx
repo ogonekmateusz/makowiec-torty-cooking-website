@@ -25,7 +25,9 @@ export default function Navbar() {
                 </li>
             </ul>
         </div>
-        
+        <div className="phonebtn-section">
+            <button>+48 123 456 789</button>
+        </div>
       </nav>
     </header>
   );
