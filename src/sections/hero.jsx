@@ -13,12 +13,12 @@ export default function Hero() {
             projekt jest dopasowany do Ciebie: smak, styl i detale, które mają
             znaczenie. Zajrzyj do mojego świata słodkich realizacji.
           </p>
-          <button className="bg-linear-to-r from-pink-400 via-pink-500 to-pink-600 cursor-pointer text-white py-3 px-5 rounded-full shadow-lg font-semibold hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300">
+          <button className="bg-linear-to-r from-pink-500 via-pink-500 to-pink-600 cursor-pointer text-lg text-white py-4 px-6 rounded-full shadow-lg font-semibold hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300">
             Zamów teraz
           </button>
         </div>
         <div className="hero-right flex justify-center items-center md:py-10">
-          <img src={cakeHero} alt="Tort" className="w-85 md:w-[25vw] h-auto rounded-4xl shadow-lg" />
+          <img src={cakeHero} alt="Tort" className="w-85 md:w-[25vw] h-auto rounded-4xl shadow-lg"/>
         </div>
       </div>
     </div>
